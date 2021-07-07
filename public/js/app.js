@@ -244,6 +244,7 @@ postBtn.on("click", function () {
   // crearMensajeHTML(mensaje, usuario, lat, lng);
 
   foto = null;
+  contenedorCamara.addClass("oculto");
 });
 
 // Obtener mensajes del servidor
