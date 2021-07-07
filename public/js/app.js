@@ -10,11 +10,13 @@ if (navigator.serviceWorker) {
   // }
 
   window.addEventListener("load", function () {
-    navigator.serviceWorker.register(swLocation).then(function (reg) {
-      swReg = reg;
-      swReg.pushManager.getSubscription().then(verificaSuscripcion);
-    })
-    .catch(console.log);
+    navigator.serviceWorker
+      .register(swLocation)
+      .then(function (reg) {
+        swReg = reg;
+        swReg.pushManager.getSubscription().then(verificaSuscripcion);
+      })
+      .catch(console.log);
   });
 }
 
