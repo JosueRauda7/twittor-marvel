@@ -204,6 +204,7 @@ cancelarBtn.on("click", function () {
       function () {
         modal.addClass("oculto");
         modalMapa.addClass("oculto");
+        contenedorCamara.addClass("oculto");
         txtMensaje.val("");
       }
     );
