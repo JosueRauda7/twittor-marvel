@@ -210,6 +210,8 @@ cancelarBtn.on("click", function () {
       }
     );
   }
+
+  if ($(".modal-mapa")) $(".modal-mapa").remove();
 });
 
 // Boton de enviar mensaje
